@@ -37,3 +37,11 @@ sudo systemctl start jenkins
 ```
 systemctl enable jenkins
 ```
+ ## Open port 8080 using firewall
+ ```
+ firewall-cmd --permanent --add-port=8080/tcp
+ ```
+ ```
+ firewall-cmd --reload
+ ```
+ 
