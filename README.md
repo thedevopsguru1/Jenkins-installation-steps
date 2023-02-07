@@ -44,4 +44,5 @@ systemctl enable jenkins
  ```
  firewall-cmd --reload
  ```
- 
+ ## Adding certificate
+ https://middlewaretechnologies.in/2022/03/how-to-install-and-configure-a-secure-jenkins-server.html#:~:text=Procedure%201%20Step1%3A%20Configure%20the%20Jenkins%20repository%20...,Step8%3A%20Restart%20the%20Jenkins%20service%20...%20More%20items
