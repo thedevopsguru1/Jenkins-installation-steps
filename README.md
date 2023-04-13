@@ -22,6 +22,9 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo \
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ```
 ```
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
+```
+```
 sudo yum upgrade -y
 ```
 ## Install & Start Jenkins
