@@ -22,6 +22,9 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo \
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ```
 ```
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io-2023.key
+```
+```
 sudo yum upgrade -y
 ```
 ## Install & Start Jenkins
@@ -61,7 +64,7 @@ firewall-cmd --reload
 firewall-cmd --list-all
 ```
 ## AWS SECURITY GROUPS:
-
+### Lb and jenkins should be in the same subnet
 ### Bastion sg: inbound : ssh from anywhere & outbound : ssh to jenkins-sg only
 ### Jenkins SG: inbound: ssh from bastion-sg & custom tcp 0n port 8080 from lb-sg , outbound: all traffic
 ###  LB-sg: inbound: http and  https 80 & 443 from anywhere and outbound: tcp custom tcp on port 8080 to jenkins-sg
