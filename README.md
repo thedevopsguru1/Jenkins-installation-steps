@@ -60,6 +60,12 @@ firewall-cmd --reload
 ```
 firewall-cmd --list-all
 ```
+## AWS SECURITY GROUPS:
+
+### Bastion sg: inbound : ssh from anywhere & outbound : ssh to jenkins-sg only
+### Jenkins SG: inbound: ssh from bastion-sg & custom tcp 0n port 8080 from lb-sg , outbound: all traffic
+###  LB-sg: inbound: http or https from anywhere and outbound: tcp custom tcp on port 8080 to jenkins-sg
+
  
  
  
