@@ -12,7 +12,7 @@ java -version
 
 ## Download binary from Jenkins.io for centos 7
 ```
-yum install wget -y
+sudo yum install wget -y
 ```
 ```
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
@@ -38,7 +38,7 @@ sudo systemctl daemon-reload
 sudo systemctl start jenkins
 ```
 ```
-systemctl enable jenkins
+sudo systemctl enable jenkins
 ```
  ## Open port 8080 using firewall
  ```
