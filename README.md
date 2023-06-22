@@ -8,7 +8,7 @@ sudo yum install java-11-openjdk –y
 ```
 sudo amazon-linux-extras enable corretto8
 ```
-``
+```
 sudo yum install java-1.8.0-amazon-corretto-devel -y
 ```
 ```
