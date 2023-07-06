@@ -49,7 +49,9 @@ sudo systemctl start jenkins
 ```
 ```
 sudo systemctl enable jenkins
+
 ```
+## NB: Make sure to use jenkins.anaeleboo.com url while setting up the jenkins master
  ## Open port 8080 using firewall
  ```
  firewall-cmd --permanent --add-port=8080/tcp
